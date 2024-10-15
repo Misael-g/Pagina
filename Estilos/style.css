@@ -158,3 +158,52 @@ footer {
 .logo-redes:hover {
     transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el ratón */
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    nav ul li {
+        margin-left: 0; 
+        margin-bottom: 10px; /* Espacio entre enlaces */
+    }
+    .seccion-principal {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        padding: 20px; 
+        height: auto; /* Permite que la sección crezca */
+    }
+
+    h1 {
+        font-size: 40px; 
+        text-align: center;
+    }
+
+    .contenido-mision {
+        font-size: 10px; 
+    }
+
+    .contenido-mision h2 {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        text-align: center; 
+    }
+
+    .btn {
+        padding: 8px 16px; /* Botón más pequeño */
+    }
+
+    .footer-izquierda {
+        font-size: 12px; 
+    }
+
+    .logo {
+        width: 80px; /* Logo más pequeño */
+    }
+}
